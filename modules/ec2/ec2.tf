@@ -4,5 +4,6 @@ resource "aws_instance" "main" {
     tags = {
         Name = "${var.env}-instance"
         Environment = var.env
+        S3_Bucket = var.s3_bucket_name
     }
 }
